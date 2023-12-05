@@ -4,12 +4,7 @@
 
 
 <template>
-    <div class="w-full flex flex-col items-center">
-        <div class="w-full h-20 flex justify-center">
-            <TopBar></TopBar>
-        </div>
-        <router-view></router-view>
-    </div>
+    <router-view></router-view>
 </template>
 
 

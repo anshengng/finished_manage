@@ -1,13 +1,20 @@
 <script setup lang="ts">
-
+let isScreen = ref(true);
+const changeScreen = () => {
+    isScreen.value = !isScreen.value;
+}
 </script>
 
 
 <template>
-    <div class="w-[220px] h-screen bg-cyan-200 ml-3">
+    <div  :class="isScreen ? 'sideMenu' : 'hidesideMenu'" @click="changeScreen">
 
     </div>
 </template>
 
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.sideMenu {
+    @apply w-[230px] h-screen bg-cyan-200;
+}
+</style>

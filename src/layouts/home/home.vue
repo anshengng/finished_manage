@@ -4,8 +4,13 @@
 
 
 <template>
-
-<router-view></router-view>
+    <div class="w-screen flex gap-2">
+        <SideMenu></SideMenu>
+        <div class="w-full flex flex-col gap-2">
+            <TopBar></TopBar>
+            <router-view></router-view>
+        </div>
+    </div>
 </template>
 
 

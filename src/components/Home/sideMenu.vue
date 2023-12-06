@@ -4,8 +4,8 @@
 
 
 <template>
-    <div class="w-[600px] h-[200px] overflow-y-auto">
-        dashboard
+    <div class="w-[220px] h-screen bg-cyan-200 ml-3">
+
     </div>
 </template>
 

@@ -7,7 +7,7 @@ const changeScreen = () => {
 
 
 <template>
-    <div  :class="isScreen ? 'sideMenu' : 'hidesideMenu'" @click="changeScreen">
+    <div  :class="isScreen ? 'sideMenu' : 'hideSideMenu'" @click="changeScreen">
 
     </div>
 </template>
@@ -16,5 +16,8 @@ const changeScreen = () => {
 <style lang="scss" scoped>
 .sideMenu {
     @apply w-[230px] h-screen bg-cyan-200;
+}
+.hideSideMenu {
+    @apply w-[100px] h-screen bg-cyan-200;
 }
 </style>

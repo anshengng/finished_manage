@@ -4,7 +4,7 @@
 
 
 <template>
-    <div class="w-[600px] h-[200px] overflow-y-auto">
+    <div class="bg-white rounded-xl overflow-y-auto">
         dashboard
     </div>
 </template>

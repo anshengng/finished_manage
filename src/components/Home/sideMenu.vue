@@ -7,7 +7,7 @@ const changeScreen = () => {
 
 
 <template>
-    <div  :class="isScreen ? 'sideMenu' : 'hideSideMenu'" class="h-screen bg-cyan-200 flex justify-center" @click="changeScreen">
+    <div  :class="isScreen ? 'sideMenu' : 'hideSideMenu'" class="h-screen bg-cyan-200 flex justify-center rounded-xl" @click="changeScreen">
         <i class="fab fa-accusoft p-4 text-3xl"></i>
     </div>
 </template>

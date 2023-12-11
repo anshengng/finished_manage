@@ -7,8 +7,14 @@ const changeScreen = () => {
 
 
 <template>
-    <div  :class="isScreen ? 'sideMenu' : 'hideSideMenu'" class="h-screen bg-cyan-200 flex justify-center rounded-xl" @click="changeScreen">
-        <i class="fab fa-accusoft p-4 text-3xl"></i>
+    <div :class="isScreen ? 'sideMenu' : 'hideSideMenu'" class="h-screen bg-white flex justify-center rounded-xl"
+        @click="changeScreen">
+        <div class="h-[4rem] flex items-center">
+            <i class="fab fa-accusoft p-4 text-3xl"></i>
+            <span :class="isScreen ? '' : 'hidden'" class="mr-2">jizhu后台管理</span>
+        </div>
+        <div class="menu "></div>
+
     </div>
 </template>
 

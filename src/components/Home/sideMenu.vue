@@ -20,7 +20,7 @@ const changeScreen = () => {
 
 
 <style lang="scss" scoped>
-.sideMenu {
+.sideMenu { 
     @apply w-[230px];
 }
 </style>

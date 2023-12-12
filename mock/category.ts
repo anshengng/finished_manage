@@ -1,4 +1,4 @@
-import { Random } from 'mockjs';
+// import { Random } from 'mockjs';
 import { MockMethod } from "vite-plugin-mock"
 
 export default [
@@ -12,7 +12,7 @@ export default [
                 data: new Array(5).fill(0).map((_r, index) => {
                     return {
                         id: index,
-                        title: Random.ctitle(),
+                        // title: Random.ctitle(),
                         icon: 'fab fa-algolia',
                     }
                 })

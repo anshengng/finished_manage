@@ -10,7 +10,7 @@ const changeScreen = () => {
     <div :class="isScreen ? 'sideMenu' : 'hideSideMenu'" class="h-screen bg-white flex flex-col items-center rounded-xl"
         @click="changeScreen">
         <div class="h-[4rem] flex items-center">
-            <i class="fab fa-accusoft"></i>
+            <i class="fab fa-accusoft mr-2 text-xl"></i>
             <span :class="isScreen ? '' : 'hidden'" class="mr-2">jizhu后台管理</span>
         </div>
         <div class="menu ">

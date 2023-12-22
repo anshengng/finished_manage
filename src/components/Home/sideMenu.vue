@@ -13,13 +13,13 @@ const changeScreen = () => {
             <i class="fab fa-accusoft mr-2 text-xl"></i>
             <span :class="isScreen ? '' : 'hidden'" class="mr-2">jizhu后台管理</span>
         </div>
-        <div class="menu ">
-            <ul>
-                <li>dashboard</li>
-                <li>用户管理</li>
-                <li>商品管理</li>
-                <li>订单管理</li>
-                <li>类别管理</li>
+        <div class="menu">
+            <ul class="">
+                <li class="">dashboard</li>
+                <li class="">用户管理</li>
+                <li class="">商品管理</li>
+                <li class="">订单管理</li>
+                <li class="">类别管理</li>
             </ul>
         </div>
 

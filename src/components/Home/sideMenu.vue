@@ -14,7 +14,13 @@ const changeScreen = () => {
             <span :class="isScreen ? '' : 'hidden'" class="mr-2">jizhu后台管理</span>
         </div>
         <div class="menu ">
-            用户管理
+            <ul>
+                <li>dashboard</li>
+                <li>用户管理</li>
+                <li>商品管理</li>
+                <li>订单管理</li>
+                <li>类别管理</li>
+            </ul>
         </div>
 
     </div>

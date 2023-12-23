@@ -39,6 +39,7 @@ declare module 'vue' {
     TestGuard: typeof import('./../src/views/auth/testGuard.vue')['default']
     TopBar: typeof import('./../src/components/Top/topBar.vue')['default']
     UserWapper: typeof import('./../src/components/Top/userWapper.vue')['default']
+    UserWrapper: typeof import('./../src/components/Top/userWrapper.vue')['default']
     Validate: typeof import('./../src/views/auth/validate.vue')['default']
     WangEditor: typeof import('./../src/components/editor/wangEditor.vue')['default']
   }

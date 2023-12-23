@@ -11,7 +11,7 @@ const userInfo = userStore.userInfo
     <!-- width 63% -->
     <div class="rounded-xl h-[4rem] px-3 bg-white flex items-center justify-between">
         <div>icon</div>
-        <UserWapper :userinfo="userInfo"></UserWapper>
+        <UserWrapper :userinfo="userInfo"></UserWrapper>
 </div>
 </template>
 

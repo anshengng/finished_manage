@@ -21,7 +21,10 @@ const categories = res.data   //// 这里是用于获取菜单内容
         <div class="menu w-full mt-3">
             <ul class="w-full">
                 <li class="w-full flex justify-center items-center h-12 hover:bg-cyan-100 cursor-pointer" @click.stop=""
-                    v-for="item in categories" :key="item.id">{{ item.title }}</li>
+                    v-for="item in categories" :key="item.id">
+                    <i class="fab fa-angular text-xl mr-1"></i>
+                    <span>{{ item.title }}</span>
+                </li>
             </ul>
         </div>
 
@@ -32,5 +35,21 @@ const categories = res.data   //// 这里是用于获取菜单内容
 <style lang="scss" scoped>
 .sideMenu {
     @apply w-[230px];
+}
+
+.hideSideMenu {
+    div {
+        ul {
+            li {
+                span {
+                    @apply hidden;
+                }
+
+                i {
+                    @apply m-6;
+                }
+            }
+        }
+    }
 }
 </style>

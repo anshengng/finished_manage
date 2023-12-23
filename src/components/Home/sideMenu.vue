@@ -6,9 +6,8 @@ const changeScreen = () => {
     isScreen.value = !isScreen.value;
 }
 
-const catgories = await getCategory()
-console.log(catgories);
-
+const res = await getCategory()
+const categories = res.data   //// 这里是用于获取菜单内容
 </script>
 
 
@@ -21,11 +20,8 @@ console.log(catgories);
         </div>
         <div class="menu w-full mt-3">
             <ul class="w-full">
-                <li class="w-full flex justify-center items-center h-12 hover:bg-cyan-100 cursor-pointer" @click.stop="">dashboard</li>
-                <li class="w-full flex justify-center items-center h-12 hover:bg-cyan-100 cursor-pointer" @click.stop="">用户管理</li>
-                <li class="w-full flex justify-center items-center h-12 hover:bg-cyan-100 cursor-pointer" @click.stop="">商品管理</li>
-                <li class="w-full flex justify-center items-center h-12 hover:bg-cyan-100 cursor-pointer" @click.stop="">订单管理</li>
-                <li class="w-full flex justify-center items-center h-12 hover:bg-cyan-100 cursor-pointer" @click.stop="">类别管理</li>
+                <li class="w-full flex justify-center items-center h-12 hover:bg-cyan-100 cursor-pointer" @click.stop=""
+                    v-for="item in categories" :key="item.id">{{ item.title }}</li>
             </ul>
         </div>
 

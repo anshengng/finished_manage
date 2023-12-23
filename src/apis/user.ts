@@ -1,6 +1,6 @@
 import { http } from "@/plugins/axios";
 export interface User {
-    name?: string
+    username: string
     age?: number
     avator?: string
     permissions?: string[]
@@ -16,17 +16,10 @@ export interface loginRef {
         value: string
     }
 }
-export async function userinfo() {
-    console.log('us');
-
-    return {
-        data: {
-            username: 'jizhu',
-            avator: '2'
-        }
-    };
-    return http.request<User>({
-        url: `/user/current`
+export async function userinfo(){
+    return await http.request<any>({
+        url: `/user/current`,
+        method: 'get'
     })
 }
 

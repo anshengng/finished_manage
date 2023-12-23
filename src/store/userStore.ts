@@ -6,9 +6,9 @@ export default defineStore('user', {
         userInfo: {} as User
     }),
     actions: {
-        async getUserInfo(){
+        async getUserInfo() {
             const res = await userinfo()
-            this.userInfo = res.data
+            this.userInfo = res as any  //TODO mock返回为{username: ''}实际应为{code: number,data:{username: ''}}
         }
     }
 })

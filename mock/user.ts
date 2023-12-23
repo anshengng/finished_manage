@@ -37,5 +37,14 @@ export default [
             return { svg: 'svg' };
         }
     },
-    
+    {
+        url: '/user/current',
+        method: 'get',
+        response: () => {
+            return {
+                username: 'jizhu'
+            }
+        },
+    }
+
 ] as MockMethod[]

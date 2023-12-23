@@ -22,7 +22,7 @@ class guard {
         if (this.token()) {
             await userStore.getUserInfo() //加载前获取用户数据
         } else {
-            console.log('token不存在'); //TODO
+            // console.log('token不存在'); //TODO
             //历史菜单
         }
         next()

@@ -17,10 +17,14 @@ class guard {
         if (!isLogin || !isGuest) {
             next({ path: isLogin ? '/home' : '/login' }); // 如果未登录或者不允许游客访问，跳转到相应页面
             return;
-        } 
+        }
         const userStore = user() //pinia_userStore
-        if (this.token()) { await userStore.getUserInfo() } //加载前获取用户数据
-        //历史菜单
+        if (this.token()) {
+            await userStore.getUserInfo() //加载前获取用户数据
+        } else {
+            console.log('token不存在'); //TODO
+            //历史菜单
+        }
         next()
     }
 

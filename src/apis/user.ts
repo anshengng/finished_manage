@@ -17,6 +17,8 @@ export interface loginRef {
     }
 }
 export async function userinfo() {
+    console.log('us');
+
     return {
         data: {
             username: 'jizhu',

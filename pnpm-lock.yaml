@@ -11,6 +11,9 @@ dependencies:
   '@types/echarts':
     specifier: ^4.9.18
     version: 4.9.22
+  '@types/mockjs':
+    specifier: ^1.0.10
+    version: 1.0.10
   '@vee-validate/i18n':
     specifier: ^4.11.1
     version: 4.11.8
@@ -495,7 +498,6 @@ packages:
 
   /@types/mockjs@1.0.10:
     resolution: {integrity: sha512-SXgrhajHG7boLv6oU93CcmdDm0HYRiceuz6b+7z+/2lCJPTWDv0V5YiwFHT2ejE4bQqgSXQiVPQYPWv7LGsK1g==}
-    dev: true
 
   /@types/node@20.9.4:
     resolution: {integrity: sha512-wmyg8HUhcn6ACjsn8oKYjkN/zUzQeNtMy44weTJSM6p4MMzEOuKbA3OjJ267uPCOW7Xex9dyrNTful8XTQYoDA==}

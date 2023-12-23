@@ -1,8 +1,14 @@
 <script setup lang="ts">
+import { getCategory } from '@/apis/category';
+
 let isScreen = ref(true);
 const changeScreen = () => {
     isScreen.value = !isScreen.value;
 }
+
+const catgories = await getCategory()
+console.log(catgories);
+
 </script>
 
 

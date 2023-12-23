@@ -2,17 +2,17 @@
 import user from '@/store/userStore';
 
 const userStore = user()
-userStore.getUserInfo()
+await userStore.getUserInfo()
 const userInfo = userStore.userInfo
 </script>
 
 
 <template>
     <!-- width 63% -->
-   <div class="rounded-xl h-[4rem] px-3 bg-white flex items-center">
+    <div class="rounded-xl h-[4rem] px-3 bg-white flex items-center justify-between">
         <div>icon</div>
-        {{ userInfo.username }}
-    </div>
+        <UserWapper :userinfo="userInfo"></UserWapper>
+</div>
 </template>
 
 

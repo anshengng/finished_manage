@@ -12,7 +12,8 @@ export default [
                 data: new Array(5).fill(0).map((_r, index) => {
                     return {
                         id: index,
-                        title: Random.ctitle()
+                        title: Random.ctitle(),
+                        path: Random.string('abcdefghopjnv',1,6) //随机生成路由
                     }
                 })
             }

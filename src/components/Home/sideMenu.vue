@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { getCategory } from '@/apis/category';
+import router from '@/router';
 
 let isScreen = ref(true);
 const changeScreen = () => {
@@ -8,6 +9,14 @@ const changeScreen = () => {
 
 const res = await getCategory()
 const categories = res.data   //// 这里是用于获取菜单内容
+categories.forEach(item => {
+    console.log(item)
+    router.addRoute({
+        name: item.title,
+        path: `/${item.path}`,
+        component: () => import('@/views/error/404.vue'),
+    })
+})
 </script>
 
 

@@ -3,8 +3,7 @@ import user from '@/store/userStore';
 
 const userStore = user()
 await userStore.getUserInfo()
-// let userInfo = userStore.userInfo
-const userInfo = null
+let userInfo = userStore.userInfo
 </script>
 
 
@@ -12,7 +11,7 @@ const userInfo = null
     <!-- width 63% -->
     <div class="rounded-xl h-[4rem] px-3 bg-white flex items-center justify-between">
         <div>icon</div>
-        <UserWrapper :userinfo="userInfo"></UserWrapper>
+        <UserWrapper :userInfo="userInfo"></UserWrapper>
 </div>
 </template>
 

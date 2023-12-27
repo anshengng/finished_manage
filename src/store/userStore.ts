@@ -3,7 +3,7 @@ import { defineStore } from "pinia";
 
 export default defineStore('user', {
     state: () => ({
-        userInfo: {}
+        userInfo: {} as User
     }),
     actions: {
         async getUserInfo() {

@@ -3,7 +3,8 @@ import user from '@/store/userStore';
 
 const userStore = user()
 await userStore.getUserInfo()
-const userInfo = userStore.userInfo
+// let userInfo = userStore.userInfo
+const userInfo = null
 </script>
 
 

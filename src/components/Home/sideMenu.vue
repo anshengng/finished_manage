@@ -28,7 +28,7 @@ categories.forEach(item => {
             <span :class="isScreen ? '' : 'hidden'" class="mr-2">jizhu后台管理</span>
         </div>
         <div class="menu w-full mt-3">
-            <div class="w-full flex justify-center items-center h-12">DashBoard</div>
+            <div class="w-full flex justify-center items-center h-12 cursor-pointer" @click.stop="$router.push('/')">DashBoard</div>
             <ul class="w-full">
                 <li class="w-full flex justify-center items-center h-12 hover:bg-cyan-100 cursor-pointer" @click.stop=""
                     v-for="item in categories" :key="item.id">
